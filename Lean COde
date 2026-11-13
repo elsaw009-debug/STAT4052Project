@@ -246,3 +246,4 @@ theorem finite_chebyshev_about_mean {Ω : Type*} [Fintype Ω]
 #print axioms finite_chebyshev
 
 end ChebyshevShrinkage
+
