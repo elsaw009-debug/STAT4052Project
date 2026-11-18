@@ -14,7 +14,7 @@ P(|X-|t) <=  Var(X)/ t2
 
 === Our Goal ===
 
-The goal of our midterm project was to learn whether an ChatGPT model could solve an already existing proof in an unconventional and original way. Choosing a foundational proof in statistics to try this out on Chebyshev's Inequality.
+The goal of this project was to determine if it is possible for an AI model to solve an already existing proof in an unconventional and original way. We decided to use ChatGPT by OpenAI and ask it to re-prove Chebyshev’s Inequality, a theorem that has existed for decades.
 
 ===== Methods ===== 
 
