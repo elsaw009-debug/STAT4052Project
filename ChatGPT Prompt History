@@ -1,8 +1,8 @@
-- Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.
+1. Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.
 
-- Can you give me the full Lean verification code so that I can compile and run it? I want the untested code, please.
+2. Can you give me the full Lean verification code so that I can compile and run it? I want the untested code, please.
 
-- Here are the errors it gave:
+3. Here are the errors it gave:
 
 MathlibDemo.lean:17:4
 failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.decidableLE', which is 'noncomputable'
@@ -49,3 +49,5 @@ MathlibDemo.lean:246:0
 
 MathlibDemo.lean:247:0
 'ChebyshevShrinkage.finite_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+4. The axioms Lean cited in its proof were: propext, Classical.choice, Quot.sound. What are these axioms and explain why are they used?
