@@ -20,7 +20,7 @@ The goal of our midterm project was to learn whether an AI model could solve an 
 
 To begin, we first fed ChatGPT the following prompt, “Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.” The model worked for 3 minutes and 10 seconds to generate a response, which contained a proof. ChatGPT was then further asked, “Can you give me the full Lean verification code so that I can compile and run it? I want the untested code, please.” The subsequent response took 9 minutes and 21 seconds. 
 
-===== Lean Code =====
+===== Result =====
 
 ChatGPT successfully a lean verified proof. 
 
