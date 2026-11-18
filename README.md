@@ -22,7 +22,7 @@ To begin, we first fed ChatGPT the following prompt, “Can you prove Chebyshev'
 
 ===== Result =====
 
-ChatGPT successfully a lean verified proof. 
+ChatGPT successfully created a lean verified proof. 
 
 For the Classical Chebyshev Proof, AI used the Threshold Shrinkage method to prove it. The proof begins with defining Y= X - mean to center the random variable around its mean so that E[Y]=0 and E[Y2]= Var(X). Through Threshold Shrinkage, the extreme values that exceed the threshold are moved  toward 0 by a distance of t, resulting in the adjusted value Y-tS and reducing their squared deviation from zero. In order to establish the relationship between the original squared deviation and tail probability, AI decomposed Y2 into three terms: 
 
