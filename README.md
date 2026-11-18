@@ -1,29 +1,21 @@
-Members 
-
+===== Members =====
 Minah Elsawy, Brody Schaffner, Emma Feng, and Elliot Fergle
 
-
-Chebvychez inequality 
-
-Background Knowledge 
-
-
+===== Chebvychez inequality ===== 
+=== Background Knowledge === 
 Chebyshev's Inequality is a probabilistic inequality. It provide an upper bound to the probability that the absolute deviation of a random variable from its mean will exceed a given threshold. 
 
 Let X be a random variable while having a finite mean and finite variance. Then, the following inequality, called Chebyshev's Inequality 
 
 P(|X-|t) <=  Var(X)/ t2
 
-Our Goal
-
+===== Our Goal =====
 The goal of our midterm project was to learn whether an AI model could solve an already existing proof in an unconventional and original way. Choosing a foundational proof in statistics to try this out on Chebyshev's Inequality.
 
-Methods 
-
-
+===== Methods ===== 
 Prompted an AI model (ChatGPT), “Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.” Took a response time of 9 minutes and 21 seconds. 
 
-Lean Code 
+===== Lean Code =====
 
 The AI Model successfully a lean verified proof. 
 
