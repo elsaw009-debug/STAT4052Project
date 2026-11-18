@@ -10,7 +10,7 @@ Chebyshev's Inequality is a probabilistic inequality. It provide an upper bound 
 
 Let X be a random variable while having a finite mean and finite variance. Then, the following inequality, called Chebyshev's Inequality 
 
-P(|X- mean|>=t) <=  Var(X)/ t^2
+P(|X - mean|>=t) <=  Var(X)/ t^2
 
 === Our Goal ===
 
@@ -22,10 +22,9 @@ To begin, we first fed ChatGPT the following prompt, “Can you prove Chebyshev'
 
 ===== Result =====
 
+ChatGPT successfully delivered a lean verified proof. 
 
-ChatGPT successfully a lean verified proof. 
-
-For the Classical Chebyshev Proof, AI used the Threshold Shrinkage method to prove it. The proof begins with defining Y= X - mean to center the random variable around its mean so that E[Y]=0 and E[Y^2]= Var(X). Through Threshold Shrinkage, the extreme values that exceed the threshold are moved  toward 0 by a distance of t, resulting in the adjusted value Y-tS and reducing their squared deviation from zero. In order to establish the relationship between the original squared deviation and tail probability, AI decomposed Y^2 into three terms: 
+For the classical Chebyshev proof, it used the Threshold Shrinkage method to prove it. The proof begins with defining Y = X - mean to center the random variable around its mean so that E[Y]=0 and E[Y^2]= Var(X). Through Threshold Shrinkage, the extreme values that exceed the threshold are moved  toward 0 by a distance of t, resulting in the adjusted value Y-tS and reducing their squared deviation from zero. In order to establish the relationship between the original squared deviation and tail probability, ChatGPT decomposed Y^2 into three terms: 
 
 Y^2=(Y-tS)^2+t^2S^2+2t(YS-tS^2)
 
@@ -39,7 +38,7 @@ P(|X-mean|>=t)<=Var(X)/t^2
 
 This completes the proof of the classical Chebyshev’s inequality.
 
-After successfully proving the classical Chebyshev’s inequality, we asked AI further to explore whether the same Threshold Shrinkage method could provide a stronger result. AI found that in the previous proof, we got rid of the first term (Y-tS)^2 and the third term 2t(YS-tS^2) because both of them are nonnegative. However, in order to get a stricter upper bound of probability, AI further considered the first term  (Y-tS)^2. According to the definition of variance, Var(Z)=E[Z]^2-(E[Z])^2, and the variance is always nonnegative, therefore E[Z^2] > = (E[Z])^2. By substituting Z= Y - tS and using the previously established fact that E[Y]=0, we can get: 
+After successfully proving the classical Chebyshev’s inequality, we asked ChatGPT further to explore whether the same Threshold Shrinkage method could provide a stronger result. It found that in the previous proof, we got rid of the first term (Y-tS)^2 and the third term 2t(YS-tS^2) because both of them are nonnegative. However, in order to get a stricter upper bound of probability, ChatGPT further considered the first term  (Y-tS)^2. According to the definition of variance, Var(Z)=E[Z]^2-(E[Z])^2, and the variance is always nonnegative, therefore E[Z^2] > = (E[Z])^2. By substituting Z= Y - tS and using the previously established fact that E[Y]=0, we can get: 
                                 = E[(Y-tS)^2] >= (E[Y-tS])^2
                                 =(E[Y]-tE[S])^2
                                 = (0-tE[S])^2
@@ -60,10 +59,4 @@ Subtracting t^2(E[S])^2 from both sides, and dividing by t^2, we get:
 Compared to the classical Chebyshev’s inequality, this new bound subtracts an additional term (E[S])^2. 
 E[S] represents the difference between the probabilities of the positive and negative tails. When the two probabilities are unequal, (E[S])^2 is greater than zero, making the new probability bound tighter. If the two probabilities are equal, the bound stays the same.
 
-To be clear, there was no variation of Catelli’s interval in this representation, and our chatbot did make sure to note that, but rather the final export of the proof of Chebeychev's inequality was formatted so that Catelli’s interval could be invoked if the prior assumptions were met.
-
-
-
-
-
-
+To be clear, there was no variation of Cantelli’s interval in this representation, and our chatbot did make sure to note that, but rather the final export of the proof of Chebeychev's inequality was formatted so that Cantelli’s interval could be invoked if the prior assumptions were met.
