@@ -12,7 +12,7 @@ Let X be a random variable while having a finite mean and finite variance. Then,
 
 P(|X-|t) <=  Var(X)/ t2
 
-===== Our Goal =====
+=== Our Goal ===
 
 The goal of our midterm project was to learn whether an AI model could solve an already existing proof in an unconventional and original way. Choosing a foundational proof in statistics to try this out on Chebyshev's Inequality.
 
