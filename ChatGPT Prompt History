@@ -1,0 +1,51 @@
+- Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.
+
+- Can you give me the full Lean verification code so that I can compile and run it? I want the untested code, please.
+
+- Here are the errors it gave:
+
+MathlibDemo.lean:17:4
+failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.decidableLE', which is 'noncomputable'
+Error code: lean.dependsOnNoncomputable
+View explanation
+
+MathlibDemo.lean:21:4
+failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.decidableLE', which is 'noncomputable'
+Error code: lean.dependsOnNoncomputable
+View explanation
+
+MathlibDemo.lean:39:40
+Variable name ht is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named _ (if used implicitly). Alternatively, prefix the name with _ to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with set_option linter.unusedVariables false
+
+MathlibDemo.lean:43:4
+simp already closes the goal
+
+Hint: Use simp instead of simpa:
+  [apply] simp [tailSign, hp]
+
+Note: This linter can be disabled with set_option linter.unnecessarySimpa false
+
+MathlibDemo.lean:236:5
+Variable name hprob is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named _ (if used implicitly). Alternatively, prefix the name with _ to silence this warning:
+  [apply] _hprob
+
+Note: This linter can be disabled with set_option linter.unusedVariables false
+
+MathlibDemo.lean:244:0
+'ChebyshevShrinkage.chebyshev_from_shrinkage' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+MathlibDemo.lean:245:0
+'ChebyshevShrinkage.variance_shrinkage_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+MathlibDemo.lean:246:0
+'ChebyshevShrinkage.chebyshev_with_tail_imbalance' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+MathlibDemo.lean:247:0
+'ChebyshevShrinkage.finite_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
