@@ -1,4 +1,6 @@
-Minah Elsawy, Brody Schaffner,Emma Feng, and Elliot Fergle
+Members 
+
+Minah Elsawy, Brody Schaffner, Emma Feng, and Elliot Fergle
 
 
 Chebvychez inequality 
