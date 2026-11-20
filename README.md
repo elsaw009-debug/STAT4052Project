@@ -49,15 +49,19 @@ $= (0 - tE[S])^2$
 $= t^2(E[S])^2$
 
 This shows that the first term is not just nonnegative, it  can also  provide a better lower bound. Substituting this new lower bound into the previous $Y^2$ decomposition formula:
+
 $E[Y^2] = E[(Y - tS)^2] + t^2E[S^2] + 2tE[YS - tS^2]$
 
 Since the third term is still nonnegative, we get:
+
 $E[Y^2] >= t^2(E[S])^2 + t^2E[S^2]$
 
 Since $E[Y^2] = Var(X)$, and $E[S^2] = P(|X - mean| >= t)$, therefore:
+
 $Var(X) >= t^2(E[S])^2 + t^2P(|X - mean| >= t)$
 
 Subtracting $t^2(E[S])^2$ from both sides, and dividing by $t^2$, we get:
+
 $P(|X - mean| >= t) <= Var(X) / t^2 - (E[S])^2$
 
 Compared to the classical Chebyshev’s inequality, this new bound subtracts an additional term $(E[S])^2$. 
