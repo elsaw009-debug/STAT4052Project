@@ -1,10 +1,10 @@
-===== Members =====
+# Members
 
 Minah Elsawy, Brody Schaffner, Emma Feng, and Elliot Fergle.
 
-===== Chebvychez inequality ===== 
+# Chebvychez inequality
 
-=== Background Knowledge === 
+## Background Knowledge
 
 Chebyshev's Inequality is a probabilistic inequality. It provide an upper bound to the probability that the absolute deviation of a random variable from its mean will exceed a given threshold. 
 
@@ -12,15 +12,15 @@ Let X be a random variable while having a finite mean and finite variance. Then,
 
 P(|X - mean|>=t) <=  Var(X)/ t^2
 
-=== Our Goal ===
+## Our Goal
 
 The goal of this project was to determine if it is possible for an AI model to solve an already existing proof in an unconventional and original way. We decided to use ChatGPT by OpenAI and ask it to re-prove Chebyshev’s Inequality, a theorem that has existed for decades.
 
-===== Methods ===== 
+# Methods
 
 To begin, we first fed ChatGPT the following prompt, “Can you prove Chebyshev's inequality without Markov's inequality? Find an original way to prove Chebyshev’s inequality. Make sure you look at all available proofs to ensure you do not repeat a proof.” The model worked for 3 minutes and 10 seconds to generate a response, which contained a proof. ChatGPT was then further asked, “Can you give me the full Lean verification code so that I can compile and run it? I want the untested code, please.” The subsequent response took 9 minutes and 21 seconds. 
 
-===== Result =====
+# Result
 
 ChatGPT successfully delivered a lean verified proof. 
 
