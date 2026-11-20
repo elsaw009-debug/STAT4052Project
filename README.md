@@ -10,7 +10,7 @@ Chebyshev's Inequality is a probabilistic inequality. It provide an upper bound 
 
 Let X be a random variable while having a finite mean and finite variance. Then, the following inequality, called Chebyshev's Inequality 
 
-$P(|X - mean| >= t) <=  Var(X) / t^2$
+$P(|X - mean| ≥ t) ≤  Var(X) / t^2$
 
 ## Our Goal
 
@@ -29,18 +29,18 @@ For the classical Chebyshev proof, it used the Threshold Shrinkage method to pro
 $Y^2 = (Y - tS)^2 + t^2S^2 + 2t(YS - tS^2)$
 
 The first term represents the squared deviation after shrinkage, the second term is related to the probability of exceeding the threshold, and the third term represents the remaining nonnegative part of the decomposition. Since both the first term and third term are nonnegative, we can drop these two terms, which gives us:
-$E[Y^2] >= t^2E[S^2]$
+$E[Y^2] ≥ t^2E[S^2]$
 
 
-Finally, since $E[Y^2] = Var(X)$,  and $E[S^2] = P(|Y|>=t)$, we can convert this inequality into:
+Finally, since $E[Y^2] = Var(X)$,  and $E[S^2] = P(|Y|≥t)$, we can convert this inequality into:
 
-$P(|X - mean| >= t) <= Var(X) / t^2$
+$P(|X - mean| ≥ t) ≤ Var(X) / t^2$
 
 This completes the proof of the classical Chebyshev’s inequality.
 
-After successfully proving the classical Chebyshev’s inequality, we asked ChatGPT further to explore whether the same Threshold Shrinkage method could provide a stronger result. It found that in the previous proof, we got rid of the first term $(Y - tS)^2$ and the third term $2t(YS - tS^2)$ because both of them are nonnegative. However, in order to get a stricter upper bound of probability, ChatGPT further considered the first term $(Y - tS)^2$. According to the definition of variance, $Var(Z) = E[Z]^2 - (E[Z])^2$, and the variance is always nonnegative, therefore $E[Z^2] >= (E[Z])^2$. By substituting $Z = Y - tS$ and using the previously established fact that $E[Y] = 0$, we can get:
+After successfully proving the classical Chebyshev’s inequality, we asked ChatGPT further to explore whether the same Threshold Shrinkage method could provide a stronger result. It found that in the previous proof, we got rid of the first term $(Y - tS)^2$ and the third term $2t(YS - tS^2)$ because both of them are nonnegative. However, in order to get a stricter upper bound of probability, ChatGPT further considered the first term $(Y - tS)^2$. According to the definition of variance, $Var(Z) = E[Z]^2 - (E[Z])^2$, and the variance is always nonnegative, therefore $E[Z^2] ≥ (E[Z])^2$. By substituting $Z = Y - tS$ and using the previously established fact that $E[Y] = 0$, we can get:
 
-$= E[(Y - tS)^2] >= (E[Y - tS])^2$
+$= E[(Y - tS)^2] ≥ (E[Y - tS])^2$
 
 $= (E[Y] - tE[S])^2$
 
@@ -54,15 +54,15 @@ $E[Y^2] = E[(Y - tS)^2] + t^2E[S^2] + 2tE[YS - tS^2]$
 
 Since the third term is still nonnegative, we get:
 
-$E[Y^2] >= t^2(E[S])^2 + t^2E[S^2]$
+$E[Y^2] ≥ t^2(E[S])^2 + t^2E[S^2]$
 
-Since $E[Y^2] = Var(X)$, and $E[S^2] = P(|X - mean| >= t)$, therefore:
+Since $E[Y^2] = Var(X)$, and $E[S^2] = P(|X - mean| ≥ t)$, therefore:
 
-$Var(X) >= t^2(E[S])^2 + t^2P(|X - mean| >= t)$
+$Var(X) ≥ t^2(E[S])^2 + t^2P(|X - mean| ≥ t)$
 
 Subtracting $t^2(E[S])^2$ from both sides, and dividing by $t^2$, we get:
 
-$P(|X - mean| >= t) <= Var(X) / t^2 - (E[S])^2$
+$P(|X - mean| ≥ t) ≤ Var(X) / t^2 - (E[S])^2$
 
 Compared to the classical Chebyshev’s inequality, this new bound subtracts an additional term $(E[S])^2$. 
 $E[S]$ represents the difference between the probabilities of the positive and negative tails. When the two probabilities are unequal, $(E[S])^2$ is greater than zero, making the new probability bound tighter. If the two probabilities are equal, the bound stays the same.
