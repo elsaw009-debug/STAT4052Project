@@ -38,14 +38,11 @@ $P(|X-mean|>=t)<=Var(X)/t^2$
 
 This completes the proof of the classical Chebyshev’s inequality.
 
-After successfully proving the classical Chebyshev’s inequality, we asked ChatGPT further to explore whether the same Threshold Shrinkage method could provide a stronger result. It found that in the previous proof, we got rid of the first term $(Y-tS)^2$ and the third term $2t(YS-tS^2)$ because both of them are nonnegative. However, in order to get a stricter upper bound of probability, ChatGPT further considered the first term $(Y-tS)^2$. According to the definition of variance, $Var(Z)=E[Z]^2-(E[Z])^2$, and the variance is always nonnegative, therefore $E[Z^2] >= (E[Z])^2$. By substituting $Z = Y - tS$ and using the previously established fact that $E[Y]=0$, we can get: 
-                                $= E[(Y-tS)^2] >= (E[Y-tS])^2$
-                                
-                                $=(E[Y]-tE[S])^2$
-                                
-                                $= (0-tE[S])^2$
-                                
-                                $= t^2(E[S])^2$
+After successfully proving the classical Chebyshev’s inequality, we asked ChatGPT further to explore whether the same Threshold Shrinkage method could provide a stronger result. It found that in the previous proof, we got rid of the first term $(Y-tS)^2$ and the third term $2t(YS-tS^2)$ because both of them are nonnegative. However, in order to get a stricter upper bound of probability, ChatGPT further considered the first term $(Y-tS)^2$. According to the definition of variance, $Var(Z)=E[Z]^2-(E[Z])^2$, and the variance is always nonnegative, therefore $E[Z^2] >= (E[Z])^2$. By substituting $Z = Y - tS$ and using the previously established fact that $E[Y]=0$, we can get:
+$= E[(Y-tS)^2] >= (E[Y-tS])^2$
+$=(E[Y]-tE[S])^2$                                
+$= (0-tE[S])^2$                                
+$= t^2(E[S])^2$
 
 This shows that the first term is not just nonnegative, it  can also  provide a better lower bound. Substituting this new lower bound into the previous $Y^2$ decomposition formula:
       $E[Y^2]= E[(Y-tS)^2] + t^2E[S^2]+ 2tE[YS-tS^2]$
