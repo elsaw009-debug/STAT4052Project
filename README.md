@@ -10,7 +10,7 @@ Chebyshev's Inequality is a probabilistic inequality. It provide an upper bound 
 
 Let X be a random variable while having a finite mean and finite variance. Then, the following inequality, called Chebyshev's Inequality 
 
-$P(|X - mean|>=t) <=  Var(X)/ t^2$
+$P(|X - mean| >= t) <=  Var(X) / t^2$
 
 ## Our Goal
 
